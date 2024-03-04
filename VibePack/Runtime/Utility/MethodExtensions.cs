@@ -6,6 +6,7 @@ using VibePack.Utility;
 using UnityEngine;
 using System;
 using TMPro;
+using System.Linq;
 
 namespace VibePack.Extensions
 {
@@ -152,9 +153,21 @@ namespace VibePack.Extensions
             return null;
         }
 
+        public static void RemoveAt<T>(ref T[] arr, int index)
+        {
+            for (int a = index; a < arr.Length - 1; a++)
+                arr[a] = arr[a + 1];
+
+            Array.Resize(ref arr, arr.Length - 1);
+        }
+
         public static T GetRandom<T>(this IList<T> list) => list[Random.Range(0, list.Count)];
 
+        public static T GetRandom<T>(this IEnumerable<T> list) => list.ElementAt(Random.Range(0, list.Count()));
+
         public static T GetRandom<T>(this IList<T> list, out int index) => list[index = Random.Range(0, list.Count)];
+
+        public static T GetRandom<T>(this IEnumerable<T> list, out int index) => list.ElementAt(Random.Range(0, index = list.Count()));
 
         public static IEnumerator Await<T>(this IList<T> list)
         {

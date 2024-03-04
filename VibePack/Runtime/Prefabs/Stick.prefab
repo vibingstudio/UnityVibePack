@@ -34,6 +34,7 @@ RectTransform:
   m_Children:
   - {fileID: 1746352976127862516}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -87,21 +88,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1746352975452403599}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d990343f46276e44af7a1bd471da708, type: 3}
+  m_Script: {fileID: 11500000, guid: 89f43112e5125ad40884058d1458ccd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   touchArea:
     enabled: 0
     value: {fileID: 0}
   handle: {fileID: 1746352976127862516}
-  clickEvent: 4
-  moveEvent: 1
+  clickEvent: 0
+  moveEvent: 0
+  handleDistance: 1
   smartClickTime: 0.2
   timeToFade: 0.2
-  onSmartClick:
+  onMove:
     m_PersistentCalls:
       m_Calls: []
-  onMove:
+  onSmartClick:
     m_PersistentCalls:
       m_Calls: []
 --- !u!225 &1746352975452403586
@@ -147,6 +149,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1746352975452403598}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

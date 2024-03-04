@@ -41,13 +41,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 304463754866322820}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fb7e6d2690d6914d80085f8aa49a9b2, type: 3}
+  m_Script: {fileID: 11500000, guid: ee3312f78db767f43a40510a38600d05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: 7624d611bd330e44b80ef65275598a16, type: 2}
+  material: {fileID: 2100000, guid: 0547a6642088f8d469313de896c8e19a, type: 2}
   textures:
-  - {fileID: 2800000, guid: ba3acff1d2f74e84ea902c7a79567d5b, type: 3}
-  - {fileID: 2800000, guid: e5cefc14bad7a214eaea3c5809120d3e, type: 3}
-  - {fileID: 2800000, guid: 04ac13f8295caf94a951eef79f0ee2fd, type: 3}
-  - {fileID: 2800000, guid: d88d349200cd0b74ba01a51097f7cd0b, type: 3}
-  transitionDuration: 0.6
+  - {fileID: 2800000, guid: 03b14ac67bd2cfd479c050930df1f0eb, type: 3}
+  - {fileID: 2800000, guid: d7f2439b18f8d0147b549a936b7062c5, type: 3}
+  - {fileID: 2800000, guid: 1fa666b40fb8c804689a3974a6ff1c66, type: 3}
+  - {fileID: 2800000, guid: 9afaac8eadb905a4889dee90172d14e6, type: 3}
+  defaultTransition:
+    transitionType: 0
+    textureId: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+    transitionTime: 0
+    changeValues: 0
+  fadeOnStart: 0
